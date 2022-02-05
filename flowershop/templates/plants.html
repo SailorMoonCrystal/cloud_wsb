@@ -1,0 +1,18 @@
+{% extends "home.html" %}
+{% load static %}
+{% block content %}
+{% load tz %}
+
+  <div class="grid-container">
+    {% for plant in plants %}
+            <div class="grid-item">
+              <ul class = "plants">
+                <h4> <b>{{plant.species}}</b> </a></h4>
+                <h5>Description: {{plant.description}} </h5>
+                <img src = "{% static plant.image %}" alt="{{plant.species}}" style="max-width:200px; max-height: 200px;" />
+                <br /><br />
+              </ul>
+            </div>
+    {% endfor %}
+  </div>
+{% endblock content %}

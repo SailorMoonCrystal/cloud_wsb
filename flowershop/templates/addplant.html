@@ -1,0 +1,26 @@
+{% extends "home.html" %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <h1>New plant</h1>
+    <form action="{% url 'flowers:add' %}" method="post">
+        {% csrf_token %}
+        <div class="form-control">
+            {{ form.species }}
+        </div>
+        <div class="form-control">
+            {{ form.description }}
+        </div>
+        <div class="form-control">
+            {{ form.image }}
+        </div>
+        <div class="form-control" style="margin: 20px">
+            {{ form.shop }}
+        </div>
+        <div>
+            <input class="my-button" type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+{% endblock content %}

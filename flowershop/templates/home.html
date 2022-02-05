@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+<title>Flowers shop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="{% static 'style.css'%}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+  <div class="topnav">
+    <a class="active" href="{% url 'flowers:plants-all' %}">Home</a>
+    <a href="{% url 'flowers:add' %}">Add plant</a>
+    <a href="{% url 'flowers:delete' %}">Remove plant</a>
+    <a href="#about">Contact</a>
+  </div>
+    
+    <div class="w3-container" id="content" style="margin-top:35px">
+      {% block content %}
+
+      {% endblock content %}
+    </div>
+
+</body>
+
+</html>

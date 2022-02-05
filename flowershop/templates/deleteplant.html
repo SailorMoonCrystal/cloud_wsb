@@ -1,0 +1,24 @@
+{% extends "home.html" %}
+{% load static %}
+{% block content %}
+{% load tz %}
+
+  <div class="grid-container">
+    {% for plant in plants %}
+            <div class="grid-item">
+              <ul class = "plants">
+                <h4> <b>{{plant.species}}</b> </a></h4>
+                <h5>{{plant.description}} </h5>
+                <img src = "{% static plant.image %}" alt="{{plant.species}}" style="max-width:200px; max-height: 200px;" />
+                <br /><br />
+              </ul>
+            
+
+                <form action="{% url 'flowers:delete' plant.pk %}" method="post">
+                    {% csrf_token %}
+                    <input type="submit" value="Delete" class="delete-button"/>
+                </form>
+            </div>
+    {% endfor %}
+  </div>
+{% endblock content %}
