@@ -1,6 +1,8 @@
 ## Description
 
-This project is used for storing information about houseplants, with all basic CRUD operations for database implemented. Project was built using python django, HTML5 and CSS. 
+This project is used for storing information about houseplants, with all basic CRUD operations for database implemented. 
+Application was developed using python django, HTML5 and CSS. Docker image of the app has been built and deployed to dockerhub. The project has been deployed as Azure App service using built image. All steps of deployment are described later in this document.
+
 ![image](https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/various-beautiful-green-plants-in-pots-on-white-royalty-free-image-931824676-1565950537.jpg?crop=0.825xw:0.620xh;0.0785xw,0.132xh&resize=1200:*)
 
 ## Tools and software :hammer:
