@@ -7,15 +7,15 @@ Application was developed using python django, HTML5 and CSS. Docker image of th
 
 ## Tools and software :hammer:
 - [Visual Studio Code](https://code.visualstudio.com/)
-- [Python 3.9.7] (https://www.python.org/downloads/)
-- [Django 2+] (https://www.djangoproject.com/)
+- [Python 3.9.7](https://www.python.org/downloads/)
+- [Django 2+](https://www.djangoproject.com/)
 - [Docker](https://www.docker.com/) 🐋
-- [Azure CLI] (https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
+- [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
 
 
 ## Build and deployment steps :rocket:
 1. Get app from https://github.com/SailorMoonCrystal/cloud_wsb
-2. Be sure you have files as showed on picture
+2. Be sure you have files as shown on picture
 
 ![image](https://i.ibb.co/fH249Wx/project-structure.png)
 
