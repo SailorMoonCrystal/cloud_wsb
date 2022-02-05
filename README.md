@@ -18,6 +18,7 @@ Application was developed using python django, HTML5 and CSS. Docker image of th
 2. Be sure you have files as showed on picture
 
 ![image](https://i.ibb.co/fH249Wx/project-structure.png)
+
 3. Create docker image from the project. After -t give your repository/image name
 ```bash
 docker build -f Dockerfile -t  kristina12131415/flowershop:latest 
